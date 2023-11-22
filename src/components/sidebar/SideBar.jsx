@@ -4,9 +4,9 @@ import {
   InstagramIcon,
   MoreIcon,
   MoreSolidIcon,
-} from "../../assets/icons/InstaIcons.jsx";
-import SideBarData from "./sideBarData.jsx";
-import SideBarDatasm from "./sideBarDatasm.jsx";
+} from "../../assets/icons/InstaIcons";
+import SideBarData from "./sideBarData";
+import SideBarDatasm from "./sideBarDatasm";
 import { useEffect, useState } from "react";
 
 function SideBar() {
