@@ -5,9 +5,9 @@ import {
   MoreIcon,
   MoreSolidIcon,
 } from "../../assets/icons/InstaIcons";
-import SideBarData from "./sideBarData";
-import SideBarDatasm from "./sideBarDatasm";
 import { useEffect, useState } from "react";
+import SideBarData from "./SideBarData";
+import SideBarDataSm from "./sideBarDatasm";
 
 function SideBar() {
   const [logo, setLogo] = useState(<InstagramIcon />);
@@ -37,7 +37,7 @@ function SideBar() {
   useEffect(() => {
     whichLogo();
     windowWidth < 670
-      ? setSideBarItems(SideBarDatasm)
+      ? setSideBarItems(SideBarDataSm)
       : setSideBarItems(SideBarData);
   }, [windowWidth]);
 
