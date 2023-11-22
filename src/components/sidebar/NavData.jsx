@@ -16,7 +16,7 @@ import {
 import UserIcon from "../usericon/UserIcon";
 import userImage from "../../assets/images/userimages/johndoe.jpg";
 
-const SideBarData = [
+const NavData = [
   {
     name: "Home",
     path: "/",
@@ -75,4 +75,4 @@ const SideBarData = [
   },
 ];
 
-export default SideBarData;
+export default NavData;

@@ -6,13 +6,13 @@ import {
   MoreSolidIcon,
 } from "../../assets/icons/InstaIcons";
 import { useEffect, useState } from "react";
-import SideBarData from "./SideBarData";
-import SideBarDataSm from "./sideBarDataSm";
+import NavDataSm from "./NavDataSm";
+import NavData from "./NavData";
 
 function SideBar() {
   const [logo, setLogo] = useState(<InstagramIcon />);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [sideBarItems, setSideBarItems] = useState(SideBarData);
+  const [sideBarItems, setSideBarItems] = useState();
 
   const whichLogo = () => {
     if (window.innerWidth < 1280) {
@@ -37,8 +37,8 @@ function SideBar() {
   useEffect(() => {
     whichLogo();
     windowWidth < 670
-      ? setSideBarItems(SideBarDataSm)
-      : setSideBarItems(SideBarData);
+      ? setSideBarItems(NavDataSm)
+      : setSideBarItems(NavData);
   }, [windowWidth]);
 
   return (
@@ -49,7 +49,7 @@ function SideBar() {
         </div>
       )}
       <ul className="flex-1 sm:flex-none flex sm:flex-col justify-evenly sm:justify-start">
-        {sideBarItems.map((item, index) => (
+        {sideBarItems?.map((item, index) => (
           <li key={index}>
             <NavLink to={item.path}>
               {({ isActive }) => (
