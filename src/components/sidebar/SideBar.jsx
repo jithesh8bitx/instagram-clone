@@ -7,7 +7,7 @@ import {
 } from "../../assets/icons/InstaIcons";
 import { useEffect, useState } from "react";
 import SideBarData from "./SideBarData";
-import SideBarDataSm from "./sideBarDatasm";
+import SideBarDataSm from "./sideBarDataSm";
 
 function SideBar() {
   const [logo, setLogo] = useState(<InstagramIcon />);
