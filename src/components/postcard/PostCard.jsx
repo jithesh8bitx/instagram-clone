@@ -65,6 +65,7 @@ function PostCard({ name, image, location, post, likes, caption, comments }) {
             className="bg-transparent border-0 outline-none placeholder:text-neutral-400"
             placeholder="Add a comment.."
             type="text"
+            name="comment"
           />
         </div>
       </div>
